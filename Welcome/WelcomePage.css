@@ -1,0 +1,198 @@
+/*line 2 to 26 for nav bar*/
+body{
+    margin: 0;
+    background-color: #FFDBFD;
+    z-index: -3;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #C9BEFF;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin: 10px;
+    margin-top: 25px;
+}
+.logo img{
+    width: 100px;
+    height: 40px;
+}
+.navvalues span{
+    margin: 0px 10px;
+    font-weight: bolder;
+    text-align: right;
+}
+.navvalues i, .title{
+    display: none;
+}
+
+
+
+/* footer */
+
+footer{
+    background-color: #8494FF;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    color: white;
+}
+footer span:hover , .navvalues span:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+footer a{
+    color: white;
+}
+
+.navvalues a{
+    color: black;
+}
+
+
+
+/*Desktop*/
+
+@media screen and (min-width:992px) {
+   
+    body{
+        overflow: hidden;
+    }
+    .navvalues span{
+        font-size: 20px;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 100px;
+
+    }
+    .myimage img{
+        width: 300px;
+        height: 300px;
+        transform: rotate(-45deg);
+        margin:10%;
+    }
+    .myimage{
+        transform: rotate(45deg);
+        background-color: #C9BEFF;
+        margin: 20%;
+        width: 400px;
+        height: 400px;
+
+    }
+    .rightcontent{
+        color: #8494FF;
+    }
+    .rightcontent h5{
+        text-align: center;
+    }
+}
+
+/*Tablet*/
+
+@media screen and (max-width:992px) {
+    .navvalues span{
+        font-size: 15px;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 100px;
+        text-align: center;
+
+    }
+    body{
+        overflow: hidden;
+    }
+    .myimage img{
+        width: 300px;
+        height: 300px;
+        transform: rotate(-45deg);
+        margin:10%;
+    }
+    .myimage{
+        transform: rotate(45deg);
+        background-color: #C9BEFF;
+        margin: 20%;
+        width: 400px;
+        height: 400px;
+
+    }
+    .rightcontent{
+        color: #8494FF;
+    }
+    .rightcontent h5{
+        text-align: center;
+    }
+}
+
+
+
+
+/*Mobile*/
+@media screen and (max-width: 576px) {  
+    footer{
+        height: 40px;
+        flex-wrap: wrap;
+        font-size: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+
+    }
+    .logo img{
+        width: 70px;
+        height: 30px;
+    }
+    .navvalues span{
+    display: none;
+    }
+    .navvalues i{
+    display: block;
+    font-size: 40px;
+    margin-right: 10px;
+    }
+    .title{
+        display: block;
+        color: #8494FF;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+        margin-top: 100px;
+        text-align: center;
+
+    }
+    .myimage img{
+        width: 200px;
+        height: 200px;
+        transform: rotate(-45deg);
+    }
+    .myimage{
+        transform: rotate(45deg);
+        background-color: #C9BEFF;
+        width: 250px;
+        height: 250px;        
+    }
+    .rightcontent{
+        color: #8494FF;
+    }
+    .rightcontent h5{
+        text-align: center;
+    }
+}
