@@ -120,7 +120,7 @@ section {
     object-fit: cover;
     border: 8px solid var(--white);
     box-shadow: var(--shadow);
-    animation: morph 4s ease-in-out infinite;
+    animation: morph 10s ease-in-out infinite;
 }
 
 @keyframes morph {
